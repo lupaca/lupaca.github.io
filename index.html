@@ -1,51 +1,55 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<meta charset="utf-8">
-	<title>Твой салон</title>
-	<link rel="apple-touch-icon" href="img/favicon.png">
-	<link rel="icon" href="img/favicon.png">
-	<!--[if IE]><link rel="shortcut icon" href="img/favicon.ico"><![endif]-->
-	<!-- IE10 -->
-	<meta name="msapplication-TileColor" content="#D83434">
-	<meta name="msapplication-TileImage" content="img/favicon.png">	
-	<style>
-		* { margin: 0; padding: 0; }
-	
-		#bg { position: fixed; top: 0; left: 0; }
-		.bgwidth { width: 100%; }
-		.bgheight { height: 100%; }	
-	</style>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-	<script>
-		$(function() {   
-		
-			var theWindow        = $(window),
-			    $bg              = $("#bg"),
-			    aspectRatio      = $bg.width() / $bg.height();
-			    			    		
-			function resizeBg() {
-				
-				if ( (theWindow.width() / theWindow.height()) < aspectRatio ) {
-				    $bg
-				    	.removeClass()
-				    	.addClass('bgheight');
-				} else {
-				    $bg
-				    	.removeClass()
-				    	.addClass('bgwidth');
-				}
-							
-			}
-			                   			
-			theWindow.resize(function() {
-				resizeBg();
-			}).trigger("resize");
-		
-		});
-	</script>	
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Твой салон</title>
+<link rel="shortcut icon" href="favicon1.ico" type="image/x-icon" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/960.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/jquery.maximage.css" type="text/css" media="screen" title="CSS" charset="utf-8" />
+<link href='http://fonts.googleapis.com/css?family=Marck+Script&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<img src="img/bg.jpg" id="bg" alt="">
+<!--div id="maximage">
+        <img src="img/image3.jpg"/>
+        <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js'></script>
+        <script src="js/jquery.cycle.all.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/jquery.maximage.js" type="text/javascript" charset="utf-8"></script>
+        
+        <script type="text/javascript" charset="utf-8">
+            $(function(){
+                // Trigger maximage
+                jQuery('#maximage').maximage();
+            });
+        </script>
+</div-->
+<div id="shim"></div>
+<div id="content">
+    <div class="logo_box"></div>          
+    <div class="main_box">
+        <h2>Ждем вас у нас в салоне <br/><span>каждый день с 9.00 до 21.00</span></h2>
+        
+        <ul class="info">
+            <li>
+                <p>т. (044) 4 222 528</p>
+            </li>
+            <li>
+                <p>ул. Вильгельма Пика, 11.<br/>03190 г. Киев</p>
+            </li>
+            <li>
+                <p class="social">
+                    <a href="#" class="fb"></a>             
+                    <a href="#" class="vk"></a>             
+                    <a href="#" class="gp"></a>             
+                    <a href="#" class="em"></a>             
+                </p>
+            </li>
+        </ul>
+    </div>
+</div>
+
 </body>
-</html>
