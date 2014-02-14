@@ -10,8 +10,15 @@ body{
 margin:0;
 padding:0;
 background:#000;
-font-family:'Marck Script', cursive;    
+font-family:'PlayfairDisplay';    
 }
+
+@font-face {
+    font-family: PlayfairDisplay; 
+    src: local("PlayfairDisplay"), 
+       url(../fonts/PlayfairDisplay-Italic.ttf) format("truetype-aat"), 
+       url(../fonts/PlayfairDisplay-Italic.otf) format("opentype");
+  }
 
 div#shim{
 visibility: hidden;
@@ -54,6 +61,14 @@ height: 350px;
 position: relative;
 background-color: rgba(0, 0, 0, 1);
 background: url(../img/logo2.jpg) center center no-repeat;
+background-size: 350px 350px;
+}
+
+.main_box{
+float: left;
+width: 500px;
+height: 350px;
+background-color: #fff;
 }
 
 h1{
@@ -73,58 +88,51 @@ margin-bottom: -4px;
 }
 
 h3{
-font-size: 34px;
+font-size: 24px;
 color: #333;
 float: left;
 margin-right: 15px;
 padding-top: 5px;
 }
 
-.main_box{
-float: left;
-width: 500px;
-height: 95px;
-padding: 25px;
+
+div.welcome {
+    height: 100px;
+    margin: 30px 100px;
+    border-bottom: 1px solid #000;
+    text-align: center;
 }
-
-
 h2{
-font-family: 'Marck Script', cursive;
-color: #ffe400;
-font-size: 38px;
-margin-bottom: 20px;
+    font-family: 'PlayfairDisplay';
+    font-size: 23px;
+    color: #000;
 }
 
-h2 span{
-color: #fff;
-font-size: 26px;
-line-height: 26px;
-font-style: italic;
+div.phone {
+    height: 50px;
+    margin: 20px 100px;
+    border-bottom: 1px solid #000;
+    text-align: center;
+    font-family: 'PlayfairDisplay';
+    font-size: 21px;
 }
 
-ul.info{
-width: 500px;
-padding: 0;
-margin: 10px 0 0 0;
-float: left;
+div.addr {
+    height: 50px;
+    margin: 20px 100px 0px 100px;
+    text-align: center;
+    font-family: 'PlayfairDisplay';
+    font-size: 21px;
 }
 
-ul.info li{
-margin-bottom: 20px;
-clear: both;
-float: left;
+div.social{
+    height: 50px;
+    margin: 4px 100px;
+    text-align: center;
+    padding-left: 70px;
 }
 
-ul.info li p{
-font-size: 30px;
-line-height: 30px;
-color: #fff;
-float: left;
-margin: 0;
-}
-
-
-ul.info li p.social a.vk{
+div.social a.vk{
 width: 35px;
 height: 35px;
 background: url(../img/vk.png) center center no-repeat;
@@ -133,7 +141,7 @@ float: left;
 margin-right: 14px;
 }
 
-ul.info li p.social a.fb{
+div.social a.fb{
 width: 35px;
 height: 35px;
 background: url(../img/f.png) center center no-repeat;
@@ -142,7 +150,7 @@ float: left;
 margin-right: 14px;
 }
 
-ul.info li p.social a.gp{
+div.social a.gp{
 width: 35px;
 height: 35px;
 background: url(../img/g+.png) center center no-repeat;
@@ -151,7 +159,7 @@ float: left;
 margin-right: 14px;
 }
 
-ul.info li p.social a.em{
+div.social a.em{
 width: 35px;
 height: 35px;
 background: url(../img/e.png) center center no-repeat;
