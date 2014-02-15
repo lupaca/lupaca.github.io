@@ -122,7 +122,10 @@ div.addr {
     font-family: 'PlayfairDisplay';
     font-size: 20px;
 }
-
+div.addr a, div.addr a:hover, div.addr a:visited{
+    color:#000;
+    text-decoration:none;
+}
 div.social{
     height: 50px;
     margin: 4px 100px;
